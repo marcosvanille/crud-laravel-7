@@ -29,7 +29,25 @@ class UsuariosController extends Controller
 
 
     }
-    public function edit(){
-        return view('usuarios.form');
+
+    public function edit($id)
+    {
+
+        $usuario = Usuario::findOrfail($id);
+        return view('usuarios.form', ['usuario123' => $usuario]);
+    }
+
+    public function update($id, Request $request)
+    {
+        $usuario = Usuario::findOrfail($id);
+        $usuario->update($request->all());
+        return Redirect::to('/usuarios');
+    }
+    public function delete($id){
+        $usuario = Usuario::findOrfail($id);
+        $usuario->delete();
+        return Redirect::to('/usuarios');
+
     }
 }
+

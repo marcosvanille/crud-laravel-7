@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32c3504f-2e9b-4e2e-a5ac-6bff14632c71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/usuarios/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/usuarios/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/usuarios/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -186,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605564581361</updated>
       <workItem from="1605564582734" duration="7542000" />
-      <workItem from="1605652602317" duration="4004000" />
+      <workItem from="1605652602317" duration="15818000" />
     </task>
     <servers />
   </component>

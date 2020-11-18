@@ -33,10 +33,15 @@
                                     <td>{{$u->name}}</td>
                                     <td>{{$u->email}}</td>
                                     <td>
-                                        <a href="{{url('usuarios/edit')}}" class="btn btn-info">Editar</button>
+                                        <a href="usuarios/{{$u->id}}/edit" class="btn btn-info">Editar</a>
                                     </td>
+
                                     <td>
-                                        <button class="btn btn-danger">Deletar</button>
+                                        <form action="usuarios/delete/{{ $u->id }}" method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button class="btn btn-danger">Deletar</button>
+                                        </form>
                                     </td>
                                 </tr>
 
