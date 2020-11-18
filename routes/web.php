@@ -20,3 +20,5 @@ Route::group(['middleware' => 'web'], function () {
 });
 
 Route::get('/usuarios' , 'UsuariosController@index');
+Route::get('/usuarios/new' , 'UsuariosController@new');
+Route::post('/usuarios/add' , 'UsuariosController@add');

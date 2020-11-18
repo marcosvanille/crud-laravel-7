@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Dashboard') }}</div>
+                    <div class="card-header"><a href="{{url('usuarios/new')}}">Novo Usuario</a></div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -15,6 +15,35 @@
                         @endif
 
                         <h1>Lista dos Usuarios</h1>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Deletar</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($usuarios as $u)
+
+                                <tr>
+                                    <th scope="row">{{$u->id}}</th>
+                                    <td>{{$u->name}}</td>
+                                    <td>{{$u->email}}</td>
+                                    <td>
+                                        <a href="{{url('usuarios/edit')}}" class="btn btn-info">Editar</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger">Deletar</button>
+                                    </td>
+                                </tr>
+
+
+                            @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
